@@ -2886,7 +2886,7 @@ object MainForm: TMainForm
     Connection = koneksi
     TableName = 'stepcode'
     Left = 672
-    Top = 248
+    Top = 168
   end
   object dscode: TDataSource
     DataSet = tcode
