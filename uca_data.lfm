@@ -1,0 +1,124 @@
+object FormDB: TFormDB
+  Left = 473
+  Height = 415
+  Top = 250
+  Width = 518
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSizeToolWin
+  Caption = 'Data Buku'
+  ClientHeight = 415
+  ClientWidth = 518
+  FormStyle = fsStayOnTop
+  Position = poMainFormCenter
+  SnapOptions.SnapToMonitor = True
+  SnapOptions.SnapToForms = True
+  LCLVersion = '4.4.0.0'
+  object DBEdit1: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 31
+    Width = 502
+    DataField = 'JENIS'
+    DataSource = MainForm.dsbuku
+    Align = alTop
+    BorderSpacing.Around = 8
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 139
+    Width = 502
+    DataField = 'JUDUL'
+    DataSource = MainForm.dsbuku
+    Align = alTop
+    BorderSpacing.Around = 8
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object DBMemo1: TDBMemo
+    Left = 8
+    Height = 163
+    Top = 193
+    Width = 502
+    Align = alClient
+    BorderSpacing.Around = 8
+    DataField = 'MANTERA'
+    DataSource = MainForm.dsbuku
+    ScrollBars = ssAutoVertical
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 502
+    Align = alTop
+    BorderSpacing.Around = 8
+    Caption = 'Category'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 116
+    Width = 502
+    Align = alTop
+    BorderSpacing.Around = 8
+    Caption = 'Title'
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 170
+    Width = 502
+    Align = alTop
+    BorderSpacing.Around = 8
+    Caption = 'Prompt'
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 15
+    Top = 62
+    Width = 502
+    Align = alTop
+    BorderSpacing.Around = 8
+    Caption = 'Code '
+  end
+  object DBEdit3: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 85
+    Width = 502
+    DataField = 'KODE'
+    DataSource = MainForm.dsbuku
+    Align = alTop
+    BorderSpacing.Around = 8
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object Panel1: TPanel
+    Left = 10
+    Height = 39
+    Top = 366
+    Width = 498
+    Align = alBottom
+    BorderSpacing.Around = 10
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 498
+    TabOrder = 4
+    object spSimpan: TSpeedButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      Left = 186
+      Height = 35
+      Top = 2
+      Width = 126
+      Caption = 'Save'
+      OnClick = spSimpanClick
+    end
+  end
+end
