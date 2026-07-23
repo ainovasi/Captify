@@ -1,4 +1,4 @@
-<img width="954" height="497" alt="image" src="https://github.com/user-attachments/assets/6b32c222-fdd9-4c25-a12b-5832909cc6c8" />
+<img width="660" height="347"" alt="image" src="https://github.com/user-attachments/assets/6b32c222-fdd9-4c25-a12b-5832909cc6c8" />
 
 # Captify
 
